@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        fieldset{
+            border: 1px solid #000;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        legend{
+            font-weight: bold;
+        }
+        label{
+            display: inline;
+            width: 120px;
+            margin-bottom: 5px;
+        }
+        input,select,textarea{
+            margin-bottom: 10px;
+        }
+        .form{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Registrasi</h1>
+    <form>
+        <!-- <fieldset> buat bikin garis kotak </fieldset> -->
+         <!-- <legend> biar text segaris sama fieldsetnya </legend> -->
+        <fieldset> 
+            <legend>Biodata</legend>
+            <div class="form">
+                <label for="name">Nama Mahasiswa:</label>
+                <input type="text" id="name" name="nama" value="Nama Anda">
+            </div>
+            <div class="form">
+                <label for="nim">Nomor Induk Mahasiswa (NIM):</label>
+                <input type="text" id="nim" name="nim" value="isi dengan angka">
+            </div>
+            <div class="form">
+                <label for="Alamat">Alamat Mahasiswa :</label>
+                <textarea name="Alamat" id="Alamat">Alamat Anda</textarea>
+            </div>
+            <div class="form">
+                <label for="Tgglhr">Tanggal Lahir :</label>
+                <select name="tanggal">
+                    <option value=1 selected>01</option>
+                    <option value=2 >02</option>
+                    <option value=3>03</option>
+                    <option value=4>04</option>
+                    <option value=5>05</option>
+                </select>
+                <select name="bulan">
+                    <option value=1 selected>januari</option>
+                    <option value=2 >Februari</option>
+                    <option value=3>Maret</option>
+                    <option value=4>april</option>
+                    <option value=5>mei</option>
+                </select>
+                <select name="tahun">
+                    <option value=1 selected>2003</option>
+                    <option value=2 >2004</option>
+                    <option value=3>2005</option>
+                    <option value=4>2006</option>
+                    <option value=5>2007/option>
+                </select>
+            </div>
+            <div class="form">
+                <label for="JK">Jenis Kelamin:</label>
+                <input type="radio" name="JK" value="Pria" for="radio1"><label for="Pria">Pria</label>
+                <input type="radio" name="JK" value="Wanita" for="radio2"><label for="Wanita">Wanita</label>
+            </div>
+            <div class="form">
+                <labe for="Foto">Upload Foto:</labe>
+                <input type="file" name="file">
+            </div>
+            <div><label for="URL">URL Website: </label>
+                <input type="text" name="URL" id="URL" value="URL Website Anda">
+            </div>
+            <div class="form">
+                <label for="Pt">Perguruan Tinggi: </label>
+                <input type="text" name="Pt" id="Pt">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Info Akun</legend>
+            <div class="form">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="form">
+                <label for="username">Username: </label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div class="form">
+                <label for="password">Password: </label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="form">
+                <label for="password">Ulangi Password: </label>
+                <input type="password" name="password" id="password">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Kemampuan Dasar</legend>
+            <div>
+                <input type="checkbox" name="html" value="html" id="html"><label for="html">HTML</label>
+                <input type="checkbox" name="css" value="css" id="css"><label for="css">CSS</label>
+                <input type="checkbox" name="JS" value="JS" id="JS"><label for="JS">JavaScript</label>
+                <input type="checkbox" name="php" value="php" id="php"><label for="php">PHP</label>
+                <input type="checkbox" name="sql" value="sql" id="sql"><label for="sql">MySQL</label>
+                <input type="checkbox" name="laravel" value="laravel" id="laravel"><label for="laravel">Laravel</label>
+                <input type="checkbox" name="RN" value="RN" id="RN"><label for="RN">React Native</label>
+            </div>
+        </fieldset>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Simpan">
+        <input type="button" value="Button" onclick="">
+</form>
+</body>
+</html>
